@@ -15,6 +15,10 @@
 • LBA 0 ~ 99 까지 100 칸을 저장할 수 있다. <br>
 • 총 400 Byte를 저장 할 수 있는 가상 SSD 를 구현 <br>
 • 저장할 수 있는 값은 0x00000000 ~ 0xFFFFFFFF 이다. <br>
+• 입력 받은 매개변수가 유효성 검사 수행 <br>
+• 파라미터의 Format이 정확해야 함. <br>
+• A ~ F, 0 ~ 9 까지 숫자 범위만 허용 <br>
+• 없는 명령어를 수행하는 경우 "INVALID COMMAND" 을 출력 (Segment Fault 방지) <br>
 </h6>
 
 <h5> Shell 명령어 예시</h5>
@@ -28,3 +32,4 @@
   • exit : shell을 종료한다. <br>
 </H6>
 
+ 
